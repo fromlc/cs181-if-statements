@@ -18,8 +18,11 @@ int main()
     cout << "ival=" << ival << "\n";
     cout << "dval=" << dval << "\n";
 
+    bool equals_flag = false;
+
     if (dval == ival)
     {
+        equals_flag = true;
         cout << setprecision(1) << fixed
             << ival << " is the same as " 
             << dval << "\n";
