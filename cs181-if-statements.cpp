@@ -3,6 +3,7 @@
 //
 // - play with if statements in class
 //------------------------------------------------------------------------------
+#include <iomanip>
 #include <iostream>
 
 using namespace std;
@@ -19,7 +20,9 @@ int main()
 
     if (dval == ival)
     {
-        cout << ival << " is the same as " << dval << "\n";
+        cout << setprecision(1) << fixed
+            << ival << " is the same as " 
+            << dval << "\n";
     }
 }
     
